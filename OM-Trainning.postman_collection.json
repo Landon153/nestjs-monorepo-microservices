@@ -1,0 +1,1380 @@
+{
+	"info": {
+		"_postman_id": "21cf05bf-6381-42f2-b583-5f69d5fa2eda",
+		"name": "OM-Trainning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7842309"
+	},
+	"item": [
+		{
+			"name": "Terminal",
+			"item": [
+				{
+					"name": "Create terminal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"dcc-cv1\",\n    \"name\": \"Container 4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/terminal",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"code\": \"dcc-cv1\",\n    \"name\": \"Container 4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/terminal",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "375"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"177-oK9o2767UtnmWWPDlXbBKAO5ac4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 18:36:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"identifiers\": [\n            {\n                \"_id\": 268\n            }\n        ],\n        \"generatedMaps\": [\n            {\n                \"_id\": 268,\n                \"createdDate\": \"2023-02-17T18:36:30.008Z\",\n                \"updatedDate\": \"2023-02-17T18:36:30.008Z\"\n            }\n        ],\n        \"raw\": [\n            {\n                \"_id\": 268,\n                \"createdDate\": \"2023-02-17T18:36:30.008Z\",\n                \"updatedDate\": \"2023-02-17T18:36:30.008Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get terminals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3281"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd1-T+BWierWKlAJNIpkFX2Ihf4wvVY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 18:40:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": [\n        {\n            \"_id\": 1,\n            \"code\": \"MKB-001\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:48:47\",\n            \"updatedDate\": \"17-02-2023 06:48:47\"\n        },\n        {\n            \"_id\": 244,\n            \"code\": \"dcc-2344\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:06:31\",\n            \"updatedDate\": \"17-02-2023 06:06:31\"\n        },\n        {\n            \"_id\": 235,\n            \"code\": \"Dsd-11\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:03:01\",\n            \"updatedDate\": \"17-02-2023 06:03:01\"\n        },\n        {\n            \"_id\": 208,\n            \"code\": \"DPT-3\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 12:01:03\",\n            \"updatedDate\": \"17-02-2023 12:01:03\"\n        },\n        {\n            \"_id\": 239,\n            \"code\": \"Dsd-234\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:03:33\",\n            \"updatedDate\": \"17-02-2023 06:03:33\"\n        },\n        {\n            \"_id\": 250,\n            \"code\": \"dcc-45\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:07:27\",\n            \"updatedDate\": \"17-02-2023 06:07:27\"\n        },\n        {\n            \"_id\": 10,\n            \"code\": \"MKB-12\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:49:16\",\n            \"updatedDate\": \"17-02-2023 06:49:16\"\n        },\n        {\n            \"_id\": 143,\n            \"code\": \"MKB-1110\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:13:41\",\n            \"updatedDate\": \"17-02-2023 11:13:41\"\n        },\n        {\n            \"_id\": 166,\n            \"code\": \"MKB-3\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:17:34\",\n            \"updatedDate\": \"17-02-2023 11:17:34\"\n        },\n        {\n            \"_id\": 13,\n            \"code\": \"MKB-11\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:18\",\n            \"updatedDate\": \"17-02-2023 07:00:18\"\n        },\n        {\n            \"_id\": 256,\n            \"code\": \"dcc-2\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:07:37\",\n            \"updatedDate\": \"17-02-2023 06:07:37\"\n        },\n        {\n            \"_id\": 241,\n            \"code\": \"dcc-234\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:04:35\",\n            \"updatedDate\": \"17-02-2023 06:04:35\"\n        },\n        {\n            \"_id\": 262,\n            \"code\": \"dcc-cv\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:07:45\",\n            \"updatedDate\": \"17-02-2023 06:07:45\"\n        },\n        {\n            \"_id\": 268,\n            \"code\": \"dcc-cv1\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:36:30\",\n            \"updatedDate\": \"17-02-2023 06:36:30\"\n        },\n        {\n            \"_id\": 17,\n            \"code\": \"MKB-110\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:25\",\n            \"updatedDate\": \"17-02-2023 07:00:25\"\n        },\n        {\n            \"_id\": 145,\n            \"code\": \"MKB-1210\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:14:02\",\n            \"updatedDate\": \"17-02-2023 11:14:02\"\n        },\n        {\n            \"_id\": 169,\n            \"code\": \"MKB-2\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:18:12\",\n            \"updatedDate\": \"17-02-2023 11:18:12\"\n        },\n        {\n            \"_id\": 19,\n            \"code\": \"MKB-90\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:45\",\n            \"updatedDate\": \"17-02-2023 07:00:45\"\n        },\n        {\n            \"_id\": 22,\n            \"code\": \"MKB-999\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:05:08\",\n            \"updatedDate\": \"17-02-2023 07:05:08\"\n        },\n        {\n            \"_id\": 151,\n            \"code\": \"MKB-1211\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:15:41\",\n            \"updatedDate\": \"17-02-2023 11:15:41\"\n        },\n        {\n            \"_id\": 223,\n            \"code\": \"DPT-1\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 05:50:56\",\n            \"updatedDate\": \"17-02-2023 05:50:56\"\n        },\n        {\n            \"_id\": 226,\n            \"code\": \"Dsd-1\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 05:56:10\",\n            \"updatedDate\": \"17-02-2023 05:56:10\"\n        },\n        {\n            \"_id\": 29,\n            \"code\": \"MKB-990\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:15:50\",\n            \"updatedDate\": \"17-02-2023 07:15:50\"\n        },\n        {\n            \"_id\": 229,\n            \"code\": \"Dsd-2\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:00:33\",\n            \"updatedDate\": \"17-02-2023 06:00:33\"\n        },\n        {\n            \"_id\": 160,\n            \"code\": \"MKB-0003\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 11:16:32\",\n            \"updatedDate\": \"17-02-2023 11:16:32\"\n        },\n        {\n            \"_id\": 31,\n            \"code\": \"MKB-120\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:16:05\",\n            \"updatedDate\": \"17-02-2023 07:16:05\"\n        }\n    ],\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get terminal by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal?terminal-code=MKB-001",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal"
+							],
+							"query": [
+								{
+									"key": "terminal-code",
+									"value": "MKB-001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal?terminal-code=MKB-001",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal"
+									],
+									"query": [
+										{
+											"key": "terminal-code",
+											"value": "MKB-001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1538"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"602-lgYx2TB75GPgeFMToT2Ubht+OWw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 18:16:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"_id\": 1,\n        \"code\": \"MKB-001\",\n        \"name\": \"Container 4\",\n        \"createdDate\": \"2023-02-17T06:48:47.288Z\",\n        \"updatedDate\": \"2023-02-17T06:48:47.288Z\",\n        \"detail\": {\n            \"_id\": 17,\n            \"localPort\": \"THPTP3\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"2023-02-17T09:06:07.036Z\",\n            \"updatedDate\": \"2023-02-17T09:06:07.036Z\"\n        },\n        \"operations\": [],\n        \"carriers\": [],\n        \"configs\": [\n            {\n                \"_id\": 3,\n                \"group\": \"LAB\",\n                \"item\": \"PG-MPL\",\n                \"description\": \"Terminal config 1\",\n                \"ipv4\": \"192.168.1.1\",\n                \"ipv6\": \"192.168.1.1\",\n                \"createdDate\": \"2023-02-17T07:44:21.836Z\",\n                \"updatedDate\": \"2023-02-17T07:44:21.836Z\"\n            },\n            {\n                \"_id\": 4,\n                \"group\": \"LAB\",\n                \"item\": \"PG-MPL\",\n                \"description\": \"Terminal config 1\",\n                \"ipv4\": \"192.168.1.1\",\n                \"ipv6\": \"192.168.1.1\",\n                \"createdDate\": \"2023-02-17T07:44:23.357Z\",\n                \"updatedDate\": \"2023-02-17T07:44:23.357Z\"\n            },\n            {\n                \"_id\": 5,\n                \"group\": \"LAB\",\n                \"item\": \"PG-MPL\",\n                \"description\": \"Terminal config 1\",\n                \"ipv4\": \"192.168.1.1\",\n                \"ipv6\": \"192.168.1.1\",\n                \"createdDate\": \"2023-02-17T07:44:23.971Z\",\n                \"updatedDate\": \"2023-02-17T07:44:23.971Z\"\n            },\n            {\n                \"_id\": 6,\n                \"group\": \"LAB\",\n                \"item\": \"PG-MPL\",\n                \"description\": \"Terminal config 1\",\n                \"ipv4\": \"192.168.1.1\",\n                \"ipv6\": \"192.168.1.1\",\n                \"createdDate\": \"2023-02-17T07:44:24.468Z\",\n                \"updatedDate\": \"2023-02-17T07:44:24.468Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Terminal detail",
+			"item": [
+				{
+					"name": "Create terminal detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terminal\": \"DBK-90\",\n    \"localPort\": \"THPTP4\",\n    \"type\": \"BIG\",\n    \"displayName\": \"Container 1 with cars Mercedes\",\n    \"company\": [\"CMC\", \"Cyber\"],\n    \"opr\": [\"OPR_1\", \"OPR_2\"],\n    \"timezone\": \"Asia/Ho_Chi_Minh\",\n    \"address\": [\"Vietnam\", \"TPHCM\"],\n    \"longitude\": \"23.12\",\n    \"latitude\": \"42.14\",\n    \"tel\": \"+84826240270\",\n    \"fax\": \"1231238\",\n    \"email\": \"dotanphat@gmail.com\",\n    \"backColor\": \"#eb4034\",\n    \"fontColor\": \"#eb4034\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/terminal-detail",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"terminal-detail"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terminal\": \"Dsd-11\",\n    \"localPort\": \"THPTP4\",\n    \"type\": \"BIG\",\n    \"displayName\": \"Container 1 with cars Mercedes\",\n    \"company\": [\"CMC\", \"Cyber\"],\n    \"opr\": [\"OPR_1\", \"OPR_2\"],\n    \"timezone\": \"Asia/Ho_Chi_Minh\",\n    \"address\": [\"Vietnam\", \"TPHCM\"],\n    \"longitude\": \"23.12\",\n    \"latitude\": \"42.14\",\n    \"tel\": \"+84826240270\",\n    \"fax\": \"1231238\",\n    \"email\": \"dotanphat@gmail.com\",\n    \"backColor\": \"#eb4034\",\n    \"fontColor\": \"#eb4034\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/terminal-detail",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"terminal-detail"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "532"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"214-ZGpRXSLla5zYu0Q9xs+6nEN30XI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 18:51:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"identifiers\": [\n            {\n                \"_id\": 27\n            }\n        ],\n        \"generatedMaps\": [\n            {\n                \"_id\": 27,\n                \"company\": [\n                    \"CMC\",\n                    \"Cyber\"\n                ],\n                \"opr\": [\n                    \"OPR_1\",\n                    \"OPR_2\"\n                ],\n                \"address\": [\n                    \"Vietnam\",\n                    \"TPHCM\"\n                ],\n                \"createdDate\": \"2023-02-17T18:51:07.231Z\",\n                \"updatedDate\": \"2023-02-17T18:51:07.231Z\"\n            }\n        ],\n        \"raw\": [\n            {\n                \"_id\": 27,\n                \"company\": [\n                    \"CMC\",\n                    \"Cyber\"\n                ],\n                \"opr\": [\n                    \"OPR_1\",\n                    \"OPR_2\"\n                ],\n                \"address\": [\n                    \"Vietnam\",\n                    \"TPHCM\"\n                ],\n                \"createdDate\": \"2023-02-17T18:51:07.231Z\",\n                \"updatedDate\": \"2023-02-17T18:51:07.231Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get terminal detail by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-detail?terminal-code=MKB-90",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-detail"
+							],
+							"query": [
+								{
+									"key": "terminal-code",
+									"value": "MKB-90"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal-detail?terminal-code=MKB-90",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal-detail"
+									],
+									"query": [
+										{
+											"key": "terminal-code",
+											"value": "MKB-90"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "685"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ad-YUkfneWbZS3vEOx0i+shKpZWwQo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 18:55:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"_id\": 1,\n        \"localPort\": \"THPTP2\",\n        \"type\": \"BIG\",\n        \"displayName\": \"Container 1 with cars Mercedes\",\n        \"company\": [\n            \"CMC\",\n            \"Cyber\"\n        ],\n        \"opr\": [\n            \"OPR_1\",\n            \"OPR_2\"\n        ],\n        \"timezone\": \"Asia/Ho_Chi_Minh\",\n        \"address\": [\n            \"Vietnam\",\n            \"TPHCM\"\n        ],\n        \"latitude\": \"42.14\",\n        \"longitude\": \"23.12\",\n        \"tel\": \"+84826240270\",\n        \"fax\": \"1231238\",\n        \"email\": \"dotanphat@gmail.com\",\n        \"backColor\": \"#eb4034\",\n        \"fontColor\": \"#eb4034\",\n        \"createdDate\": \"17-02-2023 07:01:14\",\n        \"updatedDate\": \"17-02-2023 07:01:14\",\n        \"terminal\": {\n            \"_id\": 19,\n            \"code\": \"MKB-90\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:45\",\n            \"updatedDate\": \"17-02-2023 07:00:45\"\n        }\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get terminals detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-detail",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-detail"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal-detail",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal-detail"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3100"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1c-DIM+FuyjhZGfaIO3dV9fS97pkxM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:01:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": [\n        {\n            \"_id\": 1,\n            \"localPort\": \"THPTP2\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 07:01:14\",\n            \"updatedDate\": \"17-02-2023 07:01:14\"\n        },\n        {\n            \"_id\": 17,\n            \"localPort\": \"THPTP3\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 09:06:07\",\n            \"updatedDate\": \"17-02-2023 09:06:07\"\n        },\n        {\n            \"_id\": 20,\n            \"localPort\": \"THPTP4\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 09:09:22\",\n            \"updatedDate\": \"17-02-2023 09:09:22\"\n        },\n        {\n            \"_id\": 21,\n            \"localPort\": \"THPTP4\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 09:11:22\",\n            \"updatedDate\": \"17-02-2023 09:11:22\"\n        },\n        {\n            \"_id\": 24,\n            \"localPort\": \"THPTP4\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 09:11:39\",\n            \"updatedDate\": \"17-02-2023 09:11:39\"\n        },\n        {\n            \"_id\": 25,\n            \"localPort\": \"THPTP4\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 09:12:22\",\n            \"updatedDate\": \"17-02-2023 09:12:22\"\n        },\n        {\n            \"_id\": 27,\n            \"localPort\": \"THPTP4\",\n            \"type\": \"BIG\",\n            \"displayName\": \"Container 1 with cars Mercedes\",\n            \"company\": [\n                \"CMC\",\n                \"Cyber\"\n            ],\n            \"opr\": [\n                \"OPR_1\",\n                \"OPR_2\"\n            ],\n            \"timezone\": \"Asia/Ho_Chi_Minh\",\n            \"address\": [\n                \"Vietnam\",\n                \"TPHCM\"\n            ],\n            \"latitude\": \"42.14\",\n            \"longitude\": \"23.12\",\n            \"tel\": \"+84826240270\",\n            \"fax\": \"1231238\",\n            \"email\": \"dotanphat@gmail.com\",\n            \"backColor\": \"#eb4034\",\n            \"fontColor\": \"#eb4034\",\n            \"createdDate\": \"17-02-2023 06:51:07\",\n            \"updatedDate\": \"17-02-2023 06:51:07\"\n        }\n    ],\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Operation",
+			"item": [
+				{
+					"name": "Create operation type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terminal\": \"MKB-90\",\n    \"code\": \"CN\",\n    \"name\": \"Container\",\n    \"prefix\": \"C\",\n    \"backColor\": \"#cce6c3\",\n    \"fontColor\": \"#cce6c3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/operation",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"operation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terminal\": \"MKB-90\",\n    \"code\": \"CN\",\n    \"name\": \"Container\",\n    \"prefix\": \"C\",\n    \"backColor\": \"#cce6c3\",\n    \"fontColor\": \"#cce6c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/operation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"operation"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "369"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"171-yYkVXTWclQspYe/gibYtMZSEzg4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:23:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"identifiers\": [\n            {\n                \"_id\": 2\n            }\n        ],\n        \"generatedMaps\": [\n            {\n                \"_id\": 2,\n                \"createdDate\": \"2023-02-17T19:23:57.863Z\",\n                \"updatedDate\": \"2023-02-17T19:23:57.863Z\"\n            }\n        ],\n        \"raw\": [\n            {\n                \"_id\": 2,\n                \"createdDate\": \"2023-02-17T19:23:57.863Z\",\n                \"updatedDate\": \"2023-02-17T19:23:57.863Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get operation by terminal code | operations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/operation?terminal-code=MKB-90",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"operation"
+							],
+							"query": [
+								{
+									"key": "terminal-code",
+									"value": "MKB-90"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/operation?terminal-code=MKB-90",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"operation"
+									],
+									"query": [
+										{
+											"key": "terminal-code",
+											"value": "MKB-90"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "432"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b0-5KeGf3ilnDSYl1yC3Eve6JIzNqo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:25:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"code\": \"CN\",\n        \"name\": \"Container\",\n        \"backColor\": \"#cce6c3\",\n        \"fontColor\": \"#cce6c3\",\n        \"_id\": 2,\n        \"prefix\": \"C\",\n        \"createdDate\": \"17-02-2023 07:23:57\",\n        \"updatedDate\": \"17-02-2023 07:23:57\",\n        \"terminal\": {\n            \"_id\": 19,\n            \"code\": \"MKB-90\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:45\",\n            \"updatedDate\": \"17-02-2023 07:00:45\"\n        }\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get operations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/operation",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"operation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/operation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"operation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "473"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d9-s5WtNYBFEk0MzGdsFc29BCoykFw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:26:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": [\n        {\n            \"code\": \"CN\",\n            \"name\": \"Container\",\n            \"backColor\": \"#cce6c3\",\n            \"fontColor\": \"#cce6c3\",\n            \"_id\": 1,\n            \"prefix\": \"C\",\n            \"createdDate\": \"17-02-2023 09:12:39\",\n            \"updatedDate\": \"17-02-2023 09:12:39\"\n        },\n        {\n            \"code\": \"CN\",\n            \"name\": \"Container\",\n            \"backColor\": \"#cce6c3\",\n            \"fontColor\": \"#cce6c3\",\n            \"_id\": 2,\n            \"prefix\": \"C\",\n            \"createdDate\": \"17-02-2023 07:23:57\",\n            \"updatedDate\": \"17-02-2023 07:23:57\"\n        }\n    ],\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Carrier",
+			"item": [
+				{
+					"name": "Create carrier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terminal\": \"MKB-90\",\n    \"code\": \"CN\",\n    \"name\": \"Container\",\n    \"inTML\": \"C\",\n    \"backColor\": \"#cce6c3\",\n    \"fontColor\": \"#cce6c3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/carrier",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"carrier"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terminal\": \"MKB-90\",\n    \"code\": \"CN\",\n    \"name\": \"Container\",\n    \"inTML\": \"C\",\n    \"backColor\": \"#cce6c3\",\n    \"fontColor\": \"#cce6c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/carrier",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"carrier"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "369"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"171-GP1DcaCLs2BGnVMfFtzVSzevkSs\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:30:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"identifiers\": [\n            {\n                \"_id\": 1\n            }\n        ],\n        \"generatedMaps\": [\n            {\n                \"_id\": 1,\n                \"createdDate\": \"2023-02-17T19:30:56.462Z\",\n                \"updatedDate\": \"2023-02-17T19:30:56.462Z\"\n            }\n        ],\n        \"raw\": [\n            {\n                \"_id\": 1,\n                \"createdDate\": \"2023-02-17T19:30:56.462Z\",\n                \"updatedDate\": \"2023-02-17T19:30:56.462Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get carrier by terminal code | carriers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/carrier?terminal-code=MKB-90",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"carrier"
+							],
+							"query": [
+								{
+									"key": "terminal-code",
+									"value": "MKB-90"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/carrier?terminal-code=MKB-90",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"carrier"
+									],
+									"query": [
+										{
+											"key": "terminal-code",
+											"value": "MKB-90"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "431"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1af-et9XBZ6AYveRIcDtBuiI31QjpsU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:35:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"code\": \"CN\",\n        \"name\": \"Container\",\n        \"backColor\": \"#cce6c3\",\n        \"fontColor\": \"#cce6c3\",\n        \"_id\": 1,\n        \"inTML\": \"C\",\n        \"createdDate\": \"17-02-2023 07:30:56\",\n        \"updatedDate\": \"17-02-2023 07:30:56\",\n        \"terminal\": {\n            \"_id\": 19,\n            \"code\": \"MKB-90\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 07:00:45\",\n            \"updatedDate\": \"17-02-2023 07:00:45\"\n        }\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get carriers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/carrier",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"carrier"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/carrier",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"carrier"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "471"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d7-cetLHMAPrwK9dowOqwW1M8Beaok\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:36:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": [\n        {\n            \"code\": \"CN\",\n            \"name\": \"Container\",\n            \"backColor\": \"#cce6c3\",\n            \"fontColor\": \"#cce6c3\",\n            \"_id\": 1,\n            \"inTML\": \"C\",\n            \"createdDate\": \"17-02-2023 07:30:56\",\n            \"updatedDate\": \"17-02-2023 07:30:56\"\n        },\n        {\n            \"code\": \"CN\",\n            \"name\": \"Container\",\n            \"backColor\": \"#cce6c3\",\n            \"fontColor\": \"#cce6c3\",\n            \"_id\": 2,\n            \"inTML\": \"C\",\n            \"createdDate\": \"17-02-2023 07:35:37\",\n            \"updatedDate\": \"17-02-2023 07:35:37\"\n        }\n    ],\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Terminal config",
+			"item": [
+				{
+					"name": "Create terminal config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terminal\": \"DPT-3\",\n    \"group\": \"LAB\",\n    \"item\":\"PG-MPL\",\n    \"description\": \"Terminal config 1\",\n    \"ipv4\": \"192.168.1.1\",\n    \"ipv6\": \"192.168.1.1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/terminal-config",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-config"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terminal\": \"DPT-3\",\n    \"group\": \"LAB\",\n    \"item\":\"PG-MPL\",\n    \"description\": \"Terminal config 1\",\n    \"ipv4\": \"192.168.1.1\",\n    \"ipv6\": \"192.168.1.1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/terminal-config",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal-config"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "369"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"171-lzMpGPTtLcT9lw1+MLclfRRpT7g\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:09:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"identifiers\": [\n            {\n                \"_id\": 8\n            }\n        ],\n        \"generatedMaps\": [\n            {\n                \"_id\": 8,\n                \"createdDate\": \"2023-02-17T19:09:08.332Z\",\n                \"updatedDate\": \"2023-02-17T19:09:08.332Z\"\n            }\n        ],\n        \"raw\": [\n            {\n                \"_id\": 8,\n                \"createdDate\": \"2023-02-17T19:09:08.332Z\",\n                \"updatedDate\": \"2023-02-17T19:09:08.332Z\"\n            }\n        ]\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get configs by terminal code & configs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-config?terminal-code=MKB-001",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-config"
+							],
+							"query": [
+								{
+									"key": "terminal-code",
+									"value": "MKB-001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal-config?terminal-code=MKB-001",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal-config"
+									],
+									"query": [
+										{
+											"key": "terminal-code",
+											"value": "MKB-001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "450"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c2-J+UDqFJWS3dKdGO6r2fy+jdqZU0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:13:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": {\n        \"_id\": 3,\n        \"group\": \"LAB\",\n        \"item\": \"PG-MPL\",\n        \"description\": \"Terminal config 1\",\n        \"ipv4\": \"192.168.1.1\",\n        \"ipv6\": \"192.168.1.1\",\n        \"createdDate\": \"17-02-2023 07:44:21\",\n        \"updatedDate\": \"17-02-2023 07:44:21\",\n        \"terminal\": {\n            \"_id\": 1,\n            \"code\": \"MKB-001\",\n            \"name\": \"Container 4\",\n            \"createdDate\": \"17-02-2023 06:48:47\",\n            \"updatedDate\": \"17-02-2023 06:48:47\"\n        }\n    },\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get configs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-config",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-config"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/terminal-config",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"terminal-config"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1637"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"665-YXhP5AwqorxWuERglNOWCxpsW6M\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Feb 2023 19:13:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"payload\": [\n        {\n            \"_id\": 1,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:01:03\",\n            \"updatedDate\": \"17-02-2023 07:01:03\"\n        },\n        {\n            \"_id\": 2,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:19:28\",\n            \"updatedDate\": \"17-02-2023 07:19:28\"\n        },\n        {\n            \"_id\": 3,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:44:21\",\n            \"updatedDate\": \"17-02-2023 07:44:21\"\n        },\n        {\n            \"_id\": 4,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:44:23\",\n            \"updatedDate\": \"17-02-2023 07:44:23\"\n        },\n        {\n            \"_id\": 5,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:44:23\",\n            \"updatedDate\": \"17-02-2023 07:44:23\"\n        },\n        {\n            \"_id\": 6,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:44:24\",\n            \"updatedDate\": \"17-02-2023 07:44:24\"\n        },\n        {\n            \"_id\": 7,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:07:31\",\n            \"updatedDate\": \"17-02-2023 07:07:31\"\n        },\n        {\n            \"_id\": 8,\n            \"group\": \"LAB\",\n            \"item\": \"PG-MPL\",\n            \"description\": \"Terminal config 1\",\n            \"ipv4\": \"192.168.1.1\",\n            \"ipv6\": \"192.168.1.1\",\n            \"createdDate\": \"17-02-2023 07:09:08\",\n            \"updatedDate\": \"17-02-2023 07:09:08\"\n        }\n    ],\n    \"description\": \"Response successfully from backend. This's a interceptor format please don't mind it\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Logo",
+			"item": [
+				{
+					"name": "Upload logo and name for terminal detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/Users/phatdo/Documents/nest-ecommerce/public/emptybag.png"
+								},
+								{
+									"key": "terminal",
+									"value": "MKB-120",
+									"type": "text"
+								},
+								{
+									"key": "storage",
+									"value": "NAME",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/api/terminal-logo/upload-files?storage=LOGO_AND_NAME",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-logo",
+								"upload-files"
+							],
+							"query": [
+								{
+									"key": "storage",
+									"value": "LOGO_AND_NAME"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload name file only for terminal detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-logo/upload-files?storage=NAME",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-logo",
+								"upload-files"
+							],
+							"query": [
+								{
+									"key": "storage",
+									"value": "NAME"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload logo only for terminal detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/terminal-logo/upload-files?storage=NAME",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"terminal-logo",
+								"upload-files"
+							],
+							"query": [
+								{
+									"key": "storage",
+									"value": "NAME"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
